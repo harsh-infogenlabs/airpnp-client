@@ -1,4 +1,4 @@
-import Magnify from "../assets/Magnify.svg";
+import Magnify from "../assets/magnify.svg";
 import { SearchContext } from "../pages/Home";
 import { useContext } from "react";
 
