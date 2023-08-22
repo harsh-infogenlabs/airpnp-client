@@ -1,0 +1,16 @@
+   <div>
+      <h2 className="text-3xl">{property?.name}</h2>
+      <div className="flex items-center gap-1">
+        <img src={Star} className="w-4 h-4 " />
+        <p className="text-sm font-medium">{property?.rating}</p>
+        <p>{property?.place}</p>
+      </div>
+      <img
+        src={property?.imgUrl}
+        className="h-64 rounded-2xl w-96"
+        alt={property?.place}
+      />
+      <p>{property?.distance}</p>
+      <p>{property?.date}</p>
+      <p>{property?.price}</p>
+    </div> 

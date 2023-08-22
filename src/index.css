@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  width: 350px;
+  height: 300px;
+}
+.gradient-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+  font-weight: 500;
+}
