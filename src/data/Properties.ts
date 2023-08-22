@@ -16,6 +16,7 @@ const Properties = [
     date: "28 Aug - 2 Sept",
     price: 5999,
     rating: 4.88,
+    tags: ["Cold Weather", "Amazing Views", "Cabins"],
     reviews: [
       { user: "User1", comment: "Great place to stay!", rating: 5 },
       { user: "User2", comment: "Comfortable and clean.", rating: 4 },
@@ -43,6 +44,7 @@ const Properties = [
     date: "25-30 Aug",
     price: 7986,
     rating: 4.93,
+    tags: ["Amazing Views", "Cabins", "Camping", "Countryside"],
     reviews: [
       { user: "User3", comment: "Beautiful location!", rating: 4 },
       { user: "User4", comment: "Had a wonderful time.", rating: 5 },
@@ -70,6 +72,7 @@ const Properties = [
     date: "21 - 26 Aug",
     price: 1949,
     rating: 5.0,
+    tags: ["Cold Weather", "Amazing Views", "Cabins", "Countryside"],
     reviews: [
       { user: "User5", comment: "Nice and peaceful.", rating: 4 },
       { user: "User6", comment: "Enjoyed the stay!", rating: 5 },
@@ -97,6 +100,7 @@ const Properties = [
     date: "22-27 Sep",
     price: 24953,
     rating: 4.85,
+    tags: ["Beach", "Luxury", "Island"],
     reviews: [
       { user: "User7", comment: "Fantastic views!", rating: 5 },
       { user: "User8", comment: "Great for a weekend getaway.", rating: 4 },

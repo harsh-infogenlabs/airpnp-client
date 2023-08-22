@@ -1,4 +1,5 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import { SearchContext } from "../pages/Home";
 
 const filterItem = [
   {
@@ -70,8 +71,11 @@ const filterItem = [
 ];
 
 const Filters = () => {
+  const filterContext = useContext(SearchContext);
   const [scrollPosition, setScrollPosition] = useState(0);
+
   const containerRef = useRef<HTMLDivElement>(null);
+
   const scrollRight = () => {
     const container = containerRef.current;
     const newScrollPosition = scrollPosition + 500; // Adjust the value as needed
@@ -87,13 +91,16 @@ const Filters = () => {
           className="flex items-center w-10/12 gap-5 p-5 mx-5 my-5 overflow-y-scroll md:gap-10 hide-scrollbar scroll-smooth"
         >
           {filterItem.map((item) => (
-            <div
+            <button
               className="flex flex-col items-center flex-shrink-0 hover:border-b-2"
               key={item.id}
+              onClick={() => {
+                filterContext?.setFilter(item.name);
+              }}
             >
               <img src={item.imgUrl} className="w-6 h-6" />
               <p className="text-sm font-normal">{item.name}</p>
-            </div>
+            </button>
           ))}
         </div>
         <button
