@@ -13,7 +13,7 @@ function Search() {
       <input
         type="text"
         className="w-full outline-none"
-        placeholder="Enter Price"
+        placeholder="Search"
         name="search"
         onChange={(e) => searchContext?.setSetsearchValue(e.target.value)}
         value={searchContext?.searchValue}

@@ -14,6 +14,7 @@ import Amenities from "../components/Amenities";
 
 const Rooms = () => {
   const params = useParams();
+
   if (!params.id) {
     return <div>Invalid parameter</div>;
   }

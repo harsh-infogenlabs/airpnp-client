@@ -16,7 +16,7 @@ export const SearchContext = createContext<SearchContextType | undefined>(
 );
 
 const Home = () => {
-  const [searchValue, setSetsearchValue] = useState("");
+  const [searchValue, setSetsearchValue] = useState(" ");
   const [filter, setFilter] = useLabel("", "Filter");
   return (
     <>
@@ -27,7 +27,7 @@ const Home = () => {
         <div className="flex flex-wrap justify-center gap-10 mt-36">
           {Properties.filter(
             (property) =>
-              property.tags.includes(filter) || property.name.match(searchValue)
+              property.tags.includes(filter) && property.name.match(searchValue)
           ).map((property, index) => (
             <Card
               key={index}
